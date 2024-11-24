@@ -3,12 +3,12 @@
 variable "pm_tls_insecure" {
   description = "Set to true to ignore certificate errors"
   type        = bool
-  default     = true
+  default     = false
 }
 
 #Establish which Proxmox host you'd like to spin a VM up on
 variable "proxmox_host" {
-    default = "thebeast"
+    default = "127.0.0.1:8006"
 }
 
 #Specify which template name you'd like to use
